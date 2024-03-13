@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Museo-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Museo-Sans-Cyrl-SemiBold.woff2") format("woff2"), url("../fonts/Museo-Sans-Cyrl-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo-Regular";
+  font-display: swap;
+  src: url("../fonts/Museo-Sans-Cyrl-Regular.woff2") format("woff2"), url("../fonts/Museo-Sans-Cyrl-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo-Bold";
+  font-display: swap;
+  src: url("../fonts/Museo-Sans-Cyrl-Bold.woff2") format("woff2"), url("../fonts/Museo-Sans-Cyrl-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museosanscyrl-Bold";
+  font-display: swap;
+  src: url("../fonts/museosanscyrl-700.woff2") format("woff2"), url("../fonts/museosanscyrl-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museosanscyrl-Medium";
+  font-display: swap;
+  src: url("../fonts/museosanscyrl-500.woff2") format("woff2"), url("../fonts/museosanscyrl-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/**
+ * Основные стили
+ **/
+
+html {
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-text-decoration-skip: objects;
+          text-decoration-skip: objects;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img[alt] {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+*:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+*:focus {
+  border: 1px solid red;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1280px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.delivery__wrap {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 22px;
+}
+
+.delivery__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.delivery__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 120%;
+  font-family: "Museo-Bold";
+}
+
+.delivery__link {
+  display: block;
+  margin-left: 12px;
+}
+
+.delivery__svg {
+  fill: #36BA5F;
+}
+
+.delivery p {
+  margin: 0;
+  max-width: 690px;
+  font-size: 15px;
+  line-height: 140%;
+  font-family: "Museo-Regular";
+  color: #1a1a1a;
+}
+
+.delivery p:last-child {
+  margin-bottom: 20px;
+}
+
+.hookup__wrap {
+  padding: 0 15px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hookup__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 13px;
+  line-height: 120%;
+  font-family: "Museo-Semibold";
+  letter-spacing: -1px;
+}
+
+.hookup__button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hookup__link {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #F9F9F9;
+}
+
+.hookup__link--chat {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 80px;
+  width: 215px;
+  background-color: #36BA5F;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Museo-Semibold";
+  letter-spacing: -1px;
+}
+
+.hookup__link--chat::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 56px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("../img/online-chat.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+
+.hookup__link:nth-child(n+2) {
+  margin-left: 8px;
+}
+
+.hookup__svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  fill: #36BA5F;
+}
+
+@media (min-width: 768px) {
+  .hookup__link--chat {
+    width: 224px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrap {
+    padding: 0 40px;
+  }
+
+  .delivery__wrap {
+    padding-top: 22px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .delivery__title {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+
+  .delivery p:last-child {
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+  }
+
+  .hookup__wrap {
+    padding: 0;
+    padding-bottom: 80px;
+  }
+}
